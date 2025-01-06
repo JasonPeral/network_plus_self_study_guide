@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-# network+_self_study_guide
-=======
 # Network+ Self-Study Guide
 
 This repository is dedicated to tracking my progress and creating a comprehensive self-study guide for the CompTIA Network+ certification exam. The goal is to document key concepts, provide examples, and create a structured resource for efficient learning.
@@ -36,4 +33,3 @@ If you have questions or suggestions, feel free to reach out to me through the r
 ---
 
 **Note:** This is a personal project and not an official guide or endorsement by CompTIA.
->>>>>>> fb1eabf (Update ReadMe file)
