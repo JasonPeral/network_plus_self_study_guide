@@ -77,3 +77,61 @@ The **Physical Layer** is where bits are transmitted across the network. This la
 - **Media Converters:** Convert media types (e.g., fiber to Ethernet).
 
 ---
+
+
+# Layer 2 (Data Link Layer)
+
+## Data Link Layer (Layer 2)
+
+The Data Link Layer is responsible for:
+
+- Packaging bits from Layer 1 into frames and transmitting them across the network.
+- Performing error detection and correction.
+- Identifying devices using MAC addresses.
+- Providing flow control to ensure smooth data transmission.
+
+## MAC Address (Media Access Control Address)
+
+A MAC address is a physical identifier that allows a device to operate on a logical topology. Key points about MAC addresses include:
+
+- A unique 48-bit physical addressing system assigned to every network interface card (NIC).
+- Written in hexadecimal format:
+  - **First 24 bits**: Identify the manufacturer (Organizationally Unique Identifier).
+  - **Remaining 24 bits**: Identify the specific device.
+- Crucial for logical topology, as it identifies devices within the network.
+
+## Logical Link Control (LLC)
+
+The LLC sublayer provides critical connection services, including:
+
+- Acknowledging message receipt and ensuring controlled data flow.
+  - Implements basic flow control by limiting the data sent by a sender and preventing the receiver from being overwhelmed.
+  - Uses a checksum to detect corrupted data frames.
+
+## Synchronization Methods at Layer 2
+
+### Isochronous Mode
+- Uses a common reference clock.
+- Allocates time slots for transmissions.
+- Reduces overhead during communication.
+
+### Synchronous Method
+- Devices share the same clock for synchronization.
+- Utilizes control characters and markers to define the beginning and end of data frames.
+
+### Asynchronous Method
+- Devices operate based on their own clock cycles.
+- No strict timing control for communication.
+
+## Layer 2 Devices
+
+### Network Interface Cards (NICs)
+- Provide the hardware interface for network connectivity.
+
+### Bridges
+- Connect and filter traffic between different network segments.
+
+### Switches
+- Use intelligent logic to learn and direct data to specific devices based on their MAC addresses.
+- Operate using Content Addressable Memory (CAM) tables to map MAC addresses to physical ports.
+- Enable selective data transmission to targeted areas of the network, improving efficiency.
