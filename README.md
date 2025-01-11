@@ -9,8 +9,18 @@ The purpose of this repository is to:
 - Develop a personal reference guide for networking fundamentals, components, topologies, and more.
 
 ## Repository Structure (adding onto this as the notes expand)
-- **`main_notes.md`**: A centralized document containing detailed notes and concepts from various study sessions.
-- **`section_one_network_fundamentals/`**: Directory for specific topic breakdowns (e.g., network basics, components).
+- **`section_one_network_fundamentals/`**  
+  Contains foundational networking concepts and components.
+  - `main_notes.md`
+
+- **`section_two_OSI_model/`**  
+  Contains detailed notes on each layer of the OSI Model.
+  - **`layer_one/`**
+    - `layer_one_notes.md`
+  - **`layer_two/`**
+    - `layer_two_notes.md`
+  - **`layer_three/`**
+    - `layer_three_notes.md`
 
 ## Topics Covered
 1. Network Fundamentals
