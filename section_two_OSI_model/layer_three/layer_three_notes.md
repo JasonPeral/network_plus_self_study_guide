@@ -1,85 +1,124 @@
-### Layer 3 is all about routing
+## OSI = Open System Interconnection Model 
 
-- We are going to be focused on how we forward traffic (routing) using logical addresses
-    - For example, our computers have an IP address, and it's going to either be an IPv4 or an IPv6 or both (both are considered Layer 3 protocols)
+### 12 OSI Model Overview (Objective 1.1)
 
----
+We will be focused on domain 1 Networking Concepts, specifically Objective 1.1, which states we must be able to explain concepts related to the OSI Reference Model.
 
-### Logical Addressing
+- The 7 layers of the OSI reference model are useful during our troubleshooting process. When we have a problem, we can use our knowledge of all the different layers to pinpoint what might be going on.
 
-- IP variants — common logical addressing schemes
-    - **IPv4**
-        - Written in dotted octet notation, which is 4 sets of numbers separated by dots (e.g., 192.168.0.0)
-    - **IPv6**
-        - The latest version of IP with a much larger address space
-    - These two are the most common, but they are not the only logical addressing schemes that exist.
-
----
-
-### Switching/Routing Methods
-
-- **Layer 3 switching (routing)**
-    - Switches, the physical device, are Layer 2 devices.
-    - Switching (routing) is how we transfer data in Layer 3.
-
-- **Packet Switching**
-    - Data is divided into packets and forwarded based on its IP address.
-    - Most commonly used method of switching.
-
-- **Circuit Switching**
-    - A dedicated communication link is established between two devices.
-    - An example of circuit switching could be a phone call, where a dedicated and constant communication path is maintained for the duration of the conversation.
-
-- **Message Switching**
-    - Data is divided into messages, which may be stored and then forwarded.
-    - For example, if mail is sent to a closed post office, it would be stored until the post office opens. If this were packet switching, the mail sent to a closed post office would be shredded or deleted.
+- **Mnemonic to remember the layers:**
+  - **P**lease = Physical Layer 1 (BITS)
+  - **D**o = Data Link Layer 2 (FRAME)
+  - **N**ot = Network Layer 3 (PACKET)
+  - **T**hrow = Transport Layer 4 (SEGMENT)
+  - **S**ausage = Session Layer 5 (DATA)
+  - **P**izza = Presentation Layer 6 (DATA)
+  - **A**way = Application Layer 7 (DATA)
+  
+- At a certain point within the OSI model, the term "data" changes. See above for when the names change.
 
 ---
 
-### Route Discovery and Selection
+### 13 Layer 1: Physical Layer
 
-How we are going to decide which network path to take to send that “message”.
+This is where bits are transmitted across the network and includes physical and electrical network characteristics.
 
-- **Routers maintain a routing table** for determining the best path based on the destination IP the packet wants to get sent to.
-    - Dynamic protocols (e.g., RIP, OSPF, EIGRP) enable routers to share and update route information.
-- **Routing protocols** help decide how data is going to flow across the network and how the routers are going to communicate that information.
+#### **Transition Modulation**
+- The switch between levels to represent `1` or `0`.
+  - Copper wire uses voltages:
+    - `0V = 0`, `±5V = 1`
+  - Fiber optic cables use:
+    - `Light = 1`, `No Light = 0`
+
+#### **Physical Cabling**
+- **CAT5 and CAT6 cables** use an RJ-45 connector.
+- Cabling standards:
+  - **TIA/EIA - 568A**
+  - **TIA/EIA - 568B**
+
+#### **Types of Cables**
+- **Cross-over Cable**: One end is `568A`, the other is `568B` (for device-to-device communication).
+- **Straight-through Cable (Patch Cable)**: Uses `568B` on both ends (for devices connecting to a switch or router).
+
+#### **Physical Topology**
+- Network topology considerations: Bus, Star, Ring, Full Mesh, Partial Mesh.
+
+#### **Synchronization**
+- **Asynchronous Communication**: Uses start/stop bits to indicate transmissions.
+- **Synchronous Communication**: Uses a reference clock to coordinate transmissions.
+
+#### **Bandwidth Utilization**
+- **Broadband**: Divides bandwidth into separate channels (e.g., CATV).
+- **Baseband**: Uses all frequencies at all times, often synchronous.
+
+#### **Multiplexing**
+- **Time Division Multiplexing (TDM)**: Time slots for data sharing.
+- **Statistical Time Division Multiplexing (statTDM)**: Dynamically assigns time slots.
+- **Frequency Division Multiplexing (FDM)**: Divides medium into frequency-based channels.
+
+#### **Examples of Layer 1 Devices**
+- **Cables**: Fiber Optic, Ethernet, Coaxial.
+- **Wireless**: Bluetooth, Wi-Fi, NFC.
+- **Infrastructure Devices**: Hubs, Access Points, Media Converters.
 
 ---
 
-### Connection Services at Layer 3
+### 14 Layer 2: Data Link Layer
 
-- Augment Layer 2 connection services and provide improved reliability.
-- **Improves flow control**
-    - Prevents the sender from overwhelming the receiver by ensuring the sender doesn’t send packets faster than the receiver can process them.
-- **Packet Reordering**
-    - Ensures data packets arrive and are reassembled in the correct order.
+#### **Functions of Layer 2**
+- Packages data from the **Physical Layer** and transmits frames on the network.
+- Provides **error detection, MAC addressing, and flow control**.
 
----
+#### **MAC Address (Media Access Control)**
+- Unique **48-bit** identifier assigned to network interfaces.
+- MAC addresses are written in **hexadecimal** (e.g., `D2:51:F1:3A:34:65`).
+- First **24 bits** identify the manufacturer; last **24 bits** identify the specific device.
 
-### ICMP — Internet Control Message Protocol
+#### **Logical Link Control (LLC)**
+- Ensures reliable data flow with **acknowledgments, error detection, and retransmission**.
 
-- Used for sending error messages and operational information to an IP destination.
-- Most commonly used ICMP command is:
-    - **PING**
-        - Helps troubleshoot network issues by testing connectivity and response times.
-    - **Traceroute**
-        - Traces the route of a packet through the network.
+#### **Layer 2 Synchronization Schemes**
+1. **Isochronous** - Uses a reference clock for precise timing.
+2. **Synchronous** - Uses a shared clock and control characters.
+3. **Asynchronous** - Uses independent clocks with start/stop bits.
 
----
-
-### Devices and Protocols on Layer 3
-
-- **Routers**
-- **Multi-layer switches**
-    - Combines Layer 2 switch and Layer 3 router features.
-    - A physical switch is always a Layer 2 device unless specifically mentioned as a multi-layer switch; then it is considered a Layer 3 device.
-- **Protocols**
-    - IPv4
-    - IPv6
-    - ICMP
+#### **Layer 2 Devices**
+- **Network Interface Cards (NICs)**
+- **Bridges**
+- **Switches**
 
 ---
 
-### Exam Relevance
+### 15 Layer 3: Network Layer
 
-- **IP** and **routers** are commonly encountered Layer 3 concepts (both devices and protocols) on networking certification exams, including the CompTIA Network+ exam.
+#### **Overview**
+- Focused on **routing** and forwarding data using **logical addresses (IP addresses)**.
+- Uses **IPv4 and IPv6** for logical addressing.
+
+#### **Switching and Routing Methods**
+- **Packet Switching**: Divides data into packets, forwards based on IP.
+- **Circuit Switching**: Dedicated link between devices (e.g., phone calls).
+- **Message Switching**: Messages are stored and forwarded (like postal mail).
+
+#### **Route Discovery and Selection**
+- Routers maintain a **routing table** to determine the best path.
+- **View routing table on macOS:**
+    ```sh
+    netstat -rn
+    ```
+- **Dynamic Routing Protocols:** RIP, OSPF, EIGRP.
+
+#### **Connection Services at Layer 3**
+- **Flow Control**: Prevents overwhelming the receiver.
+- **Packet Reordering**: Ensures correct order of received packets.
+
+#### **ICMP (Internet Control Message Protocol)**
+- Used for error messages and network diagnostics.
+- **PING**: Tests connectivity and response times.
+- **Traceroute**: Traces the route of a packet through the network.
+
+#### **Layer 3 Devices and Protocols**
+- **Devices**: Routers, Multi-layer switches.
+- **Protocols**: IPv4, IPv6, ICMP.
+
+---
