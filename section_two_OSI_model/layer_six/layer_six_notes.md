@@ -1,47 +1,83 @@
 # OSI Model - Layer 6: Presentation Layer
 
-The **Presentation Layer** is the 6th layer in the OSI (Open Systems Interconnection) model. It serves as a translator between the application layer (Layer 7) and the lower layers of the OSI stack. Its primary role is to ensure that data sent from one system can be read by another, regardless of differences in data formats.
+### What happens in the presentation layer
 
-## Key Functions of the Presentation Layer
+- Layer 6 formats the data to be exchanged and secures that data with proper encryption
+  - Important words to remember for layer 6 are **DATA FORMATTING** and **DATA ENCRYPTION**
 
-1. **Data Translation:**
-   - Converts data into a format that can be understood by the receiving application. For example, it may convert EBCDIC to ASCII.
+### Data Formatting
 
-2. **Data Encryption and Decryption:**
-   - Ensures data security by encrypting data before transmission and decrypting it upon arrival at the destination.
+- Data is formatted by a computer to have compatibility between different devices
+- There are common formats like below:
+  - **American Standard Code For Information Interchange (ASCII)**
+    - Text-based language
+    - Ensures data is readable by receiving system
+    - Provides proper data structures
+    - Negotiates data transfer syntax for the application layer (7)
+  - **GIFs** - Pictures that have motion
+  - **JPEG** - Used for photographs
+  - **PNG** - Used for internet images
+- These formats allow compatibility for these files to be used between different devices and operating systems
+- All these formats boil down to `1s and 0s` on our device’s hard drive or network
 
-3. **Data Compression:**
-   - Reduces the size of data for efficient transmission, which is especially useful in bandwidth-limited environments.
+---
 
-4. **Data Formatting:**
-   - Formats data in a way that the receiving system can interpret, such as handling image file types (JPEG, PNG) or video formats (MP4, AVI).
+### Encryption
 
-5. **Syntax and Semantics:**
-   - Ensures the proper syntax and semantics are applied for data representation.
+- Used to scramble data in transit to keep it secure from prying eyes and provide data confidentiality as it crosses our network and as it's stored
+- **Transport Layer Security (TLS)**
+  - Ensures secure data transfer
+  - Creates an encrypted tunnel, protecting sensitive information during transmission
+  - **How TLS Works (Handshake Process)**
+    
+    TLS establishes a secure connection using a **handshake** between the client and the server:
+    
+    1. **Client Hello**:
+       - The client sends a request to the server, including supported TLS versions, cipher suites, and a random number.
+    2. **Server Hello**:
+       - The server responds with its TLS version, selected cipher suite, and its own random number.
+       - The server provides its **digital certificate** (signed by a trusted Certificate Authority, CA) for authentication.
+    3. **Key Exchange**:
+       - The client and server exchange cryptographic keys (using RSA, Diffie-Hellman, or Elliptic Curve methods).
+       - They agree on a **shared session key** to encrypt data.
+    4. **Finished Message**:
+       - Both client and server send a message verifying encryption is established.
+       - **Secure communication begins**.
 
-## Examples of Presentation Layer Protocols and Formats
+### Scripting languages in layer 6
 
-- **Encryption Protocols:**
-  - Secure Socket Layer (SSL)
-  - Transport Layer Security (TLS)
-  
-- **Data Formats:**
-  - JPEG, PNG (Images)
-  - MP4, AVI (Videos)
-  - XML, JSON (Data structures)
+- Controls how ASCII text is displayed on the screen. The following languages determine how ASCII text should be displayed:
+  - **HTML**
+  - **XML**
+  - **PHP**
+  - **JavaScript**
 
-- **Character Encoding:**
-  - ASCII
-  - Unicode
+### Standard Text Formats
 
-## Role in Communication
+- Different ways of displaying text using ones and zeros:
+  - **ASCII**
+  - **Unicode**
+  - **EBCDIC**
 
-- Acts as a "translator" between heterogeneous systems.
-- Enhances data security through encryption.
-- Facilitates compatibility between devices with different data formats.
+### Image Formats
 
-## Importance in the OSI Model
+- Ways to show graphical representations of `1s and 0s`:
+  - **GIFs**
+  - **JPEGs**
+  - **TIFFs**
+  - **SVGs**
+  - **PNGs**
 
-Without the Presentation Layer, systems would struggle to communicate effectively due to differences in data formats and encodings. This layer ensures seamless data exchange by standardizing the way data is presented.
+### Movie File Formats
 
+- Formatted `1s and 0s` to create watchable videos:
+  - **MP4**
+  - **MPEG**
+  - **MOV**
 
+### Encryption Algorithms
+
+- Scrambles data to provide confidentiality and security during transit and storage:
+  - **TLS**
+  - **SSL (Secure Socket Layer)**
+- Focus on security
