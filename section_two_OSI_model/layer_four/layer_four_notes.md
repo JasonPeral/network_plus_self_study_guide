@@ -23,5 +23,25 @@ Layer 4 is the dividing line between the upper layers and the lower layers of th
 - Adjusts segment size to optimize bandwidth and throughput.
 - Reduces retransmissions by limiting the amount of data sent at once.
 
-#### **Buffering**
-- Allocates memory for storing segments when bandwidth is limited.
+### **Buffering**
+
+- Occurs when devices allocate memory to store segments if bandwidth is not readily available
+- Data is stored temporarily in a buffer before being sent to its destination
+- Buffer compensates for speed differences between the sender and receiver
+- Buffers help prevent data loss when networks are congested or latency occurs
+
+## Benefits Of Buffering
+
+- Smoothens data flow in case of varying network speeds
+- Reduces packet loss by temporarily holding data
+- Prevents jitter in real-time applications like VoIP or video conferencing
+
+---
+
+## **Layer 4 Devices**
+
+- **TCP and UDP** - Protocols operating in Layer 4
+- **WAN Accelerators** - Apply compression to IP packets and send the segments over WAN accelerators to improve network speed
+- **Load Balancers** - Distribute network traffic across multiple servers using transport layer information
+- **Firewalls** - Inspect transport layer information (like TCP/UDP port numbers) to allow or block traffic
+
