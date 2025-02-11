@@ -1,41 +1,31 @@
-# Layer 5 (Session Layer)
+### What is the session layer?
 
-## Session Layer (Layer 5)
+- Manages sessions, ensuring separate conversations to prevent data intermingling
 
-### Overview
+### Setting up a session
 
-- Manages sessions, ensuring separate conversations to prevent data intermingling.
+- We have to check a user credentials and assign a number to the session to help identify them.
+- Basically a random number that we use to negotiate services for this session with the server and we use this number to get negotiate who is going to talk first.
 
-### Setting Up a Session
+### Maintain the session
 
-- Verifies **user credentials**.
-- Assigns **session numbers** to uniquely identify and manage active sessions.
+- Continuous data transfer between parties
+- If the connection breaks we will have to re-establish the connection
+- Includes acknowledgement of data
 
-### Maintaining a Session
+### Tearing down a session
 
-- Facilitates **continuous data transfer** between communicating parties.
-- Requires **re-establishment** if the connection breaks.
-- Includes **acknowledgment** of received data.
-
-### Tearing Down a Session
-
-- Ends the session once communication objectives are met.
-- Can end through **mutual agreement** or if one party **disconnects**.
+- Ending a session once communication goals are achieved
+- Mutual agreement or one party disconnects
 
 ### Layer 5 Devices and Protocols
 
-#### **H.323**
+- **H.323**
+    - Used for setting up, maintaining and tearing down voice and video connections
+    - Operates over the real-time transport protocol (RTP)
+        - Whenever we see RTP we should think stream audio and streaming video in a 2 way format like a phone call or a facetime call
+- **NetBIOS**
+    - Used by computers for file sharing over a network
+    - Commonly associated with windows file sharing
 
-- Used for setting up, maintaining, and tearing down **voice** and **video** connections.
-- Operates over the **Real-Time Transport Protocol (RTP)**.
-
-#### **NetBIOS**
-
-- Used by computers for **file sharing** over a network.
-- Commonly associated with **Windows file sharing** systems.
-
-### Key Considerations
-
-- **Layer 5 issues** typically involve **protocols** and **software**, not specific hardware devices.
-
----
+## Layer 5 issues involve protocols and software rather than specific devices
