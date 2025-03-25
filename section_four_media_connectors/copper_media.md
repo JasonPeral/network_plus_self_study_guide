@@ -115,13 +115,16 @@ graph LR
 
 ### Basic Speeds and distance for each type of cable
 
-CAT 5	100 Mbps @ 100 meters
-CAT 5e	1 Gbps @ 100 meters
-CAT 6	1 Gbps @ 100 meters; 10 Gbps @ 55 meters
-CAT 6a	10 Gbps @ 100 meters
-CAT 7	10 Gbps @ 100 meters
-CAT 8	Up to 40 Gbps at about 30 meters
-	
-RG-6	1 Gbps at 300 meters
-Twinaxial	10Gbps or more at 10 meters
-DAC	100 Gbps at 15 meters (active cables), 100 Gbps at 7 meters (passive cables)
+## 📡 Cable Types and Speeds
+
+| **Cable Type** | **Speed** | **Distance** |
+|----------------|-----------|--------------|
+| CAT 5          | 100 Mbps  | 100 meters   |
+| CAT 5e         | 1 Gbps    | 100 meters   |
+| CAT 6          | 1 Gbps / 10 Gbps | 100 meters / 55 meters |
+| CAT 6a         | 10 Gbps   | 100 meters   |
+| CAT 7          | 10 Gbps   | 100 meters   |
+| CAT 8          | Up to 40 Gbps | ~30 meters   |
+| RG-6 (Coax)    | 1 Gbps    | 300 meters   |
+| Twinaxial      | 10 Gbps or more | 10 meters   |
+| DAC (Direct Attach Copper) | 100 Gbps (active) / 100 Gbps (passive) | 15 meters / 7 meters |
