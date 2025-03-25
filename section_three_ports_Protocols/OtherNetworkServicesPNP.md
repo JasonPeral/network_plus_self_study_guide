@@ -42,3 +42,43 @@ Breakdown
 - Ports
     - LDAP (insecure): communicates over port 389 using both TCP and UDP
     - LDAPS (Secure): Encrypted with SSL or TLS and operates over port 636 using TCP
+
+# Finding Open Ports
+
+NMAP
+
+Short form for Network Mapper and its a powerful open source tool used for network discovery and security audit
+
+- At its core NMAP has features to:
+    - Scan networks to discover hosts and services
+    - Detect open ports on a system
+    - Identify operating systems and software versions
+    - Map Network topology
+    - Identify potential vulnerabilities
+- Use cases
+    - Pentesters use it to gether intel during reconnaissance phase
+    - Sysadmins use it to monitor their networks and spot unauthorized devices
+    - Cyber sec professionals use it for vulnerability scanning and compliance
+- ZenMap
+    - Provides a graphical user interface with NMAP functionality where you can choose the different profiles of scans for example quick scan and intense scan.
+
+---
+
+### Basic NMap commands
+```python
+# Scan a single host
+nmap 192.168.1.1
+
+# Scan a range of IPs
+nmap 192.168.1.1-254
+
+# Scan and detect OS
+nmap -O 192.168.1.1
+
+# Scan common ports with service/version detection
+nmap -sV 192.168.1.1
+
+# Run a more aggressive scan (includes OS, version, script, traceroute)
+nmap -A 192.168.1.1
+
+```
