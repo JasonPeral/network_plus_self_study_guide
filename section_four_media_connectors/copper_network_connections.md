@@ -49,3 +49,11 @@
 - **RJ-45** For data devices in data networks (Computers, Printers, Switches and routers)
 - **F-Types** For coaxial cables in CATV, Satellite and cable internet connections
 - **BNC(SDI)** is used for professional video connections and RF applications
+
+```mermaid
+graph LR
+  x(RJ 11) --> y(Telephone)
+  z(RJ 45) --> a(Data networks)
+  b(f-types) --> c(Coaxial cable)
+  d(BNC) --> e(For professional video connection)
+```
