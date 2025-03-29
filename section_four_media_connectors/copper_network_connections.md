@@ -1,18 +1,24 @@
 # Copper Network Connections
 
+- Flashcard Section
+    - RJ-X Registered Jack
+        - Standard telecommunication network interface for voice and data connections
+        - RJ-11(voice) and RJ-45(data) are common connector types
+        - Uses twisted pair cables with defined pinout configurations
+
 ### Registered Jack (RJ-X)
 
-- A standard telecommunication network Interface for connecting voice and data equipment to a service provided by a local exchange carrier or long-distance carrier
+- A standard telecommunication **network Interface** for connecting voice and data equipment to a service provided by a local exchange carrier or long-distance carrier
 - The X in the name is just a placeholder for the specific standard number like RJ-11 or RJ-45
 - RJ-11 and RJ-45
     - Are crucial for voice and data networks
-    - Uses twisted pair cables
+    - These cables use a twisted pair configuration in their wiring
 
 ---
 
 ### Radio Guide (RG-X)
 
-- Series of coaxial cables, used in high speed internet, television and radio connections/communications.
+- Series of **coaxial cables**, used in high speed internet, television and radio connections/communications.
 - Commonly used cables as a network tech
     - RG-6 for cable TV
     - RG 59 for older applications
@@ -49,7 +55,6 @@
 - **RJ-45** For data devices in data networks (Computers, Printers, Switches and routers)
 - **F-Types** For coaxial cables in CATV, Satellite and cable internet connections
 - **BNC(SDI)** is used for professional video connections and RF applications
-
 ```mermaid
 graph LR
   x(RJ 11) --> y(Telephone)
