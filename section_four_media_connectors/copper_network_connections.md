@@ -5,6 +5,24 @@
         - Standard telecommunication network interface for voice and data connections
         - RJ-11(voice) and RJ-45(data) are common connector types
         - Uses twisted pair cables with defined pinout configurations
+    - RJ-X Registered Jack
+        - Standard telecommunication network interface for voice and data connections
+        - RJ-11(voice) and RJ-45(data) are common connector types
+        - Uses twisted pair cables with defined pinout configurations
+    - What are RJ-11 and RJ-45 used for?
+        - RJ-11: Voice networks (telephones)
+        - RJ-45: Data networks (Ethernet)
+            
+            Both use twisted pair wiring.
+            
+    - What is RG-X (Radio Guide)?
+        - A series of coaxial cables used in high-speed internet, TV, and radio communications. Common types include RG-6 and RG-59.
+    - What is RG-6 used for?
+        
+        Cable TV, satellite, and internet connections. It has better shielding and a thicker gauge than RG-59.
+        
+    - What is RG-59 used for?
+        - Older coaxial cable applications like analog video and legacy systems.
 
 ### Registered Jack (RJ-X)
 
