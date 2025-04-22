@@ -33,7 +33,7 @@
 
 ---
 
-![image.png](attachment:baf391cb-8823-4ee1-a4cd-b073fe2e9f12:image.png)
+![Diagram](attachment:baf391cb-8823-4ee1-a4cd-b073fe2e9f12:image.png)
 
 ### Patch cable use cases
 
