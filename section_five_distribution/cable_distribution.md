@@ -53,4 +53,28 @@ There are many different components of a Cable Distribution System
 
 ### Patch Panels
 
-- Device or unit that has a number of jacks for the use of connecting and routing circuits for
+- Device or unit that has a number of jacks for the use of connecting and routing circuits for monitoring, interconnecting and testing circuits in a convenient and flexible manner.
+- Patch panels will have 2 sides
+    - Front side — network jacks (RJ-45 network ports)
+    - Back side — 110 punchdown block
+- 110 block
+    - A type of punchdown block that is used for both voice and data applications that rely on CAT5 or newer copper based networks
+    - 110 blocks are installed using a punchdown tool
+- Patch panels are preferred over direct connections for network maintenance and port protection as it is easier to replace a patch panel than a whole switch or server
+- Fiber distribution panels
+    - Doesn't use punchdown blocks.
+    - Facilitates fiber connections by basically being like a coupler
+    - Uses SC, LC, ST or MTRJ and can act as a converted for types of fiber connection
+
+---
+
+### Cable Distribution Process
+
+1. Computer connected to wall jack using a straight through patch cable (copper or can be fiber)
+2. Wall jack terminates cable into punch down block
+3. Cable runs through walls, ceilings or raised floors, across cable trays to intermediate distribution frame
+4. Cable then gets terminated into patch panels punch down block 
+5. Another patch cable connects patch panel to open port on edge switch in the IDF
+6. For fiber the components would just be replaced with fiber counterparts
+- This process breaks up long cable run into multiple pieces for flexibility and ease of repair
+- We can troubleshoot and repair easily due to multiple connections points which avoids full cable reruns for minor issues
