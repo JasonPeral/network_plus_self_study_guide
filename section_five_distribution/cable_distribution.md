@@ -7,16 +7,14 @@
 
 There are many different components of a Cable Distribution System
 
-| Demarcation Point | -Locations where the ISP connections ends and the network infrastructure and cabling begins
--Responsibility shifts onto organization at this point |
-| --- | --- |
-| Main Distribution Frame | -Houses the Main Point of Presence Router and backbone switch |
-| Intermediate Distribution Frame | -Branches from the MDF to server deliver to smaller areas or groups
--Contains Edge switches to provide network access to end users |
-| Racks | -Holds various networking equipment for efficient space management |
-| Patch Panels | -Convenient unit that allows for flexible connecting and routing circuits for monitoring, interconnecting and testing |
-| Fiber Distribution Panels | -Facilitate fiber connections without punchdown blocks
--Can act as a converter for types of fiber connections |
+| **Component**               | **Description**                                                                                                                                           |
+|-----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Demarcation Point           | - Locations where the ISP connection ends and the network infrastructure and cabling begins.<br>- Responsibility shifts onto the organization at this point. |
+| Main Distribution Frame     | - Houses the Main Point of Presence Router and backbone switch.                                                                                            |
+| Intermediate Distribution Frame | - Branches from the MDF to deliver to smaller areas or groups.<br>- Contains Edge switches to provide network access to end users.                        |
+| Racks                       | - Holds various networking equipment for efficient space management.                                                                                       |
+| Patch Panels                | - Convenient unit that allows for flexible connecting and routing circuits for monitoring, interconnecting, and testing.                                    |
+| Fiber Distribution Panels   | - Facilitate fiber connections without punchdown blocks.<br>- Can act as a converter for types of fiber connections.                                        |
 
 ---
 
