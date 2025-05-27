@@ -55,3 +55,9 @@
 - Equipment that we have must match voltage standards within our country to operate properly
 - Mismatched voltage can damage or destroy equipment such as US standard equipment being plugged in within EU which is overloading the voltage that the equipment can handle
 - Modern equipment have dual voltage and can operate on both standards
+
+**Some Key Considerations**
+
+- We want to use UPS, PDU and backup generators together for comprehensive power management
+- Having a good power distribution system ensures seamless power transition and protection against outages for data center reliability
+- Consider power loads and voltage requirements before install equipment to ensure compatibility with US(120 Volts) or EU(230 Volts) standards
