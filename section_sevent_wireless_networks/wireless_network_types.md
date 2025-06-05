@@ -44,3 +44,37 @@ The different types of wireless networks can be
 - Connects 2 distinct locations over longer distances using High Gain Antennas
 - Static in nature because each end is a fixed locations
 - This network offers dedicated bandwidth and is ideal for linking buildings of the same company or areas without feasible cabling options
+
+---
+
+### Mesh Networks
+
+- Adaptable and resilient network, nodes connecting to multiple others which creates infinite paths for data
+- Has self healing capabilities which ensures stability by reconfiguring broken pathways on the fly
+- Mesh networks are good for large scale deployment where laying cable everywhere is not feasible or too expensive
+- Two types of mesh networks
+    1. Using ESS configuration in a wireless network which is operating in infrastructure mode
+    2. Other mesh networks can be involving multiple different types of wireless networks all operating together to provide services to end users.
+        1. Can combine wifi devices, cellular networks, micro wave links and satellite connections into a single wireless mesh network.
+
+---
+
+### Autonomous vs Lightweight AP
+
+**Autonomous AP**
+
+- Where the standalone device has all of the intelligence to handle wireless networking functions independently
+- Useful in small setups where centralized controller is not necessary
+    - For example home router / modem is an Autonomous AP
+
+**Lightweight AP**
+
+- Managed by a centralized controller and is a simpler and cheaper configuration
+- Basically offloads all the processing to the centralized controller which makes it easier to manage large scale networks as any rules or policies can be applied globally.
+
+---
+
+### Consideration in choosing a wireless network type
+
+- Performance, reliability and ease of use will vary on the network type you choose
+- Always access specific environment needs as each network type has its own advantages and disadvantages which range from simplicity to robustness
