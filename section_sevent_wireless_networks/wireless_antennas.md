@@ -42,9 +42,8 @@ There are 3 types of Antennas types
 - Common use cases: connecting to long distance cell towers or television transmitters
     - Yagi Antennas are unique in design as they are a type of uni directional antenna and consists of multiple parallel elements in a line which makes them highly efficient to pick up signals
     
-    ![[https://www.dxengineering.com/search/part-type/hf-yagi-hexx-beam-and-rotatable-antennas](https://imgs.search.brave.com/zAOhcnd-kvsG5wKBvJ-wAZPUBueJD7TfOUTd0Uzyog4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZHhlbmdpbmVl/cmluZy5jb20vZ2xv/YmFsL2ltYWdlcy9w/cm9kL21lZGl1bWxh/cmdlL2l2YS0xODQ4/NS0xMDYwX3FzX21s/LmpwZw)](attachment:e76dcb04-3d94-4497-a2e6-fc3daf2fd271:image.png)
-    
-    
+    ![Description](https://imgs.search.brave.com/zAOhcnd-kvsG5wKBvJ-wAZPUBueJD7TfOUTd0Uzyog4/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMuZHhlbmdpbmVl/cmluZy5jb20vZ2xv/YmFsL2ltYWdlcy9w/cm9kL21lZGl1bWxh/cmdlL2l2YS0xODQ4/NS0xMDYwX3FzX21s/LmpwZw)
+
 
 ### Considerations in Antenna Selection
 
