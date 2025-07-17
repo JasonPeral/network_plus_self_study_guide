@@ -15,7 +15,7 @@ The primary devices that we use today are Routers and Switches but have evolved 
 - Hubs connect collision domains together which makes the collision potential bigger
 - Typical symbol of a hub on a diagram
     
-    ![Screenshot 2025-07-09 at 10.46.06 PM.png](attachment:b1fb55ec-7762-47ee-ae94-38ea533a176c:Screenshot_2025-07-09_at_10.46.06_PM.png)
+<!-- ![Screenshot 2025-07-09 at 10.46.06 PM.png](attachment:b1fb55ec-7762-47ee-ae94-38ea533a176c:Screenshot_2025-07-09_at_10.46.06_PM.png) -->
     
 
 ---
