@@ -1,5 +1,13 @@
 # VLAN
 
+### Core summary
+
+- **VLANs logically segment a network into separate broadcast domains at Layer 2(Data Link || frame)**, enabling grouped devices without regard to physical cabling location on a switch .
+- **They reduce hardware needs** (vs. traditional LANs) by enabling multiple VLANS to share the same switch using trunking (802.1Q tagging).
+- **Each VLAN frame is tagged with a VLAN ID**, allowing switches to route traffic within the correct VLAN.
+- **Benefits of VLANs** include enhanced security, performance (smaller broadcast domains), easier management, and cost efficiency.
+- **SVIs provide Layer 3 routing between different VLANs**, allowing inter-VLAN communication without separate routers; VLAN configs are stored in the VLAN database (e.g., `vlan.dat` on Cisco).
+
 ---
 
 ### Virtual Local Area Network || VLAN
