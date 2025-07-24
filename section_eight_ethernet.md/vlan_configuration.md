@@ -55,3 +55,26 @@
     - Link aggregation enhances bandwidth capacity and also redundancy for higher levels of network availability
     - By combining multiple network connections together we are able to distribute our data across multiple links in an organized manner so that we can utilize the combined bandwidth of all of the combined links
     - Link aggregation is commonly used for trunking lines between switches and for high-speed connectivity within data centers. For Example: if we were to aggregate four 1 Gbps links together we have a total of 4 Gbps of BW available on a single logical link.
+
+    ---
+
+    ### Speed and Duplex Configurations
+
+    - These 2 configurations refer to the settings that determine the rate at which data is transmitted and also the mode of communications that will be used between the network devices
+    - **SPEED →** refers to the rate of data that is being transmitted which is usually measured in Mbps or Gbps
+    - **DUPLEX →** refers to how data is being sent over the connections
+        - **HALF-DUPLEX →** Devices can send or receive data at any given time but cant do both simultaneously (random example: Walkie Talkies)
+        - **FULL-DUPLEX →** Devices can send or receive data simultaneously
+            - This will help our overall network transfer speed because it effectively doubles our network capacity when compared with half duplex mode
+    - Misconfiguration of speed and duplex mode can significantly impact the networks performance and data throughput.
+        
+        > **For example if the a high performing server can handle 1Gbps throughput and full duplex mode but is only configured for 100Mbps and a half duplex config then there is a lot left on the table and presents potential network congestions.**
+        > 
+
+    ---
+
+    ### Auto-Negotiation
+
+    - A feature that allows network devices and non network devices to automatically choose the best possible speed and duplex settings when connecting to each other
+        - Simply: when 2 ethernet devices are connected || Switch ←→ Server || they says heres what I support what do you? then agrees on the fastest most reliable options that both devices support
+    - Manual configuration may be preferred in certain situations with legacy equipment or if theres certain performance requirements.
