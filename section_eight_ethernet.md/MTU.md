@@ -33,9 +33,13 @@
     - **Some Challenges and considerations to take in for Jumbo frames**
 
 - Why MTU lives in L3
-    graph TD
+
+```mermaid
+graph TD
     A[Ethernet Frame Layer 2] --> B[Ethernet Header 14 bytes]
     A --> C[IP Packet Layer 3]
     C --> D[IP Header 20 bytes typical]
     C --> E[IP Payload up to 1500 bytes MTU]
     A --> F[FCS / CRC 4 bytes]
+
+```
