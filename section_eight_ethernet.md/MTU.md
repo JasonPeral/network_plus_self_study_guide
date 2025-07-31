@@ -31,6 +31,12 @@
     - Jumbo frames are typically configured with an MTU size of 9000 Bytes
     - Jumbo frame configurations are beneficial for high bandwidth applications like working in a storage area network, large file transfers, video streaming etc. etc.
     - **Some Challenges and considerations to take in for Jumbo frames**
+        - Not all networking equipment supports a jumbo frame configuration, mismatched configuration can lead to drop packets and a drop in performance and efficiency
+        - Potential for fragmentation to occur, if the jumbo frames runs into a device or network segment that has a smaller configured MTU size. The frame would need to be split up or fragmented into smaller size frames.
+            - This basically offsets the benefit of even using a Jumbo frame as there will be increased latency and processing overhead on our network devices
+        - Less troubleshooting support because our traditional troubleshooting tools often dont support the larger frame size used by Jumbo frame config
+        - To effectively use the jumbo frame configuration we need to ensure consistent configuration on all networking devices like switches routers and network interface cards(NIC)
+
 
 - Why MTU lives in L3
 
